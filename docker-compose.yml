@@ -1,0 +1,10 @@
+version: "3"
+services:
+  ws:
+    build: .
+    platform: linux/x86_64
+    volumes:
+      - type: bind
+        source: .
+        target: /root/ws
+    working_dir: /root/ws
